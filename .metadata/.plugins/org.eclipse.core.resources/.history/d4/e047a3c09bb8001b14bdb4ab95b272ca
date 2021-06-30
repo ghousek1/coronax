@@ -1,0 +1,49 @@
+package com.mt.orchardcodecamp.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+//secuity configuration can be done by extending the websecurityconfigureradapter
+
+@EnableWebSecurity
+public class OrchardSecurityConfiguration extends WebSecurityConfigurerAdapter {
+	@Autowired
+	UserDetailsService userDetailsService;
+
+	@Override
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+
+		 auth.userDetailsService(userDetailsService);
+
+	
+
+	}
+
+	@Bean
+	public PasswordEncoder getPassword() {
+		return NoOpPasswordEncoder.getInstance();
+	}
+
+	// authorization using HTTPSecurity
+
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		http
+		        .authorizeRequests()
+				.antMatchers("/","/orchardcodecamp","/orchardmind","/orchardlead", "/orchardtrack")
+				.hasRole("LEAD")
+				.and()
+				.oauth2ResourceServer(oauth2ResourceServerCustomizer)
+				.antMatchers("/orchardmind")
+				.hasRole("MIND").formLogin();
+
+	}
+
+}

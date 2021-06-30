@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <title>Orchard Code Camp App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand mb-0 h1" href="/">
+        <span>
+        Orchard Code Camp
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Orchard Mind
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/orchardcodecamp/addorchardmindmenu">Add Orchard Mind</a>
+              <a class="dropdown-item" href="/orchardcodecamp/loginorchardmindmenu"> Orchard Mind</a>
+              <a class="dropdown-item" href="/orchardcodecamp/searchorchardmindmenu">Search Orchard Mind</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/orchardcodecamp/showorchardmindsmenu">Show All Orchard Minds</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Orchard Lead
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/orchardcodecamp/addorchardleadmenu">Add Orchard Lead</a>
+              <a class="dropdown-item" href="/orchardcodecamp/loginorchardleadmenu">Login Orchard Lead</a>
+              <a class="dropdown-item" href="/orchardcodecamp/searchorchardleadmenu">Search Orchard Lead</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/orchardcodecamp/showorchardleadsmenu">Show All Orchard Leads</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Orchard Track
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/orchardcodecamp/addorchardtrackmenu">Add New Track</a>
+                <a class="dropdown-item" href="/orchardcodecamp/"> Mind Track Allocation</a>
+                <a class="dropdown-item" href="/orchardcodecamp/"> Lead Track Allocation</a>
+        
+            
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Allotment
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/orchardcodecamp/allotmentmenu">Lead-Mind-Allotment</a>
+      
+            </div>
+          </li>
+         
+        </ul>
+      </div>
+    </nav>
+  <br>
+    <div class="container">
+      <div class="searchContainer">
+        <h1>Orchard Code Camp</h1>
+        <p class="lead">
+          Spring Boot WebApp to Add/fetch/delete/update minds and leads profile info and track alloction management
+        </p>
+       
+      </div>
+      <br />
+     
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+
+   
+  </body>
+
+  <body></body>
+</html>
