@@ -1,0 +1,27 @@
+server:
+  port: 9143
+
+spring:
+  datasource:
+    #add your datasource configuration
+    name: coronax_db
+    url: jdbc:mysql://localhost:3306/coronax_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+        show_sql: true
+    hibernate:
+        ddl-auto: update
+ 
+        
+  
+  
+
+
+
